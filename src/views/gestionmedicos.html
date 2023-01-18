@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/styles/estilosHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg azulSura navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">GESTORAPP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gestionmedicos.html">Medicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gestionpacientes.html">Pacientes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="../../assets/img/fotomedico.png" alt="" class="w-100 img-fluid">
+                </div>
+                <div class="col-12 col-md-6">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample">Registrar especialista</button>
+                    <div class="collapse mt-3" id="collapseExample">
+                        <div class="card card-body">
+                            <form>
+
+                                <h2>Registro</h2>
+                                <div class="row">
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="bi bi-person-fill"></i></span>
+                                            <input type="text" class="form-control" placeholder="Nombres" id="nombres">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-postcard"></i></span>
+                                            <input type="text" class="form-control" placeholder="Documento de identidad" id="documento">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <select class="form-select" id="especialidad">
+                                            <option selected>Especialidad</option>
+                                            <option value="1">Cirujía</option>
+                                            <option value="2">Ginecología</option>
+                                            <option value="3">Internista</option>
+                                            <option value="4">Ortopedia</option>
+                                            <option value="5">Pediatría</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-card-list"></i></span>
+                                            <input type="text" class="form-control" placeholder="Registro profesional" id="registro">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="bi bi-envelope-fill"></i></span>
+                                            <input type="text" class="form-control" placeholder="Correo electrónico" id="correo">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <select class="form-select" id="sede">
+                                            <option selected>Sede</option>
+                                            <option value="1">Córdoba</option>
+                                            <option value="2">Industriales</option>
+                                            <option value="3">La 33</option>
+                                            <option value="4">Molinos</option>
+                                            <option value="5">San Diego</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <select class="form-select" id="horario">
+                                            <option selected>Horarios</option>
+                                            <option value="1">06:00 - 14:00</option>
+                                            <option value="2">14:00 - 22:00</option>
+                                            <option value="3">22:00 - 06:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Descripción completa" id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Descripción</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-camera-fill"></i></span>
+                                            <input type="text" class="form-control" placeholder="Fotografía" id="fotografia">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100" id="botonenviomedico">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-5" id="fila">
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="../helpers//wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../controllers/controladormedicos.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src= "../controllers/controladorpintarmedicos.js" type="module"></script>
+</body>
+
+</html>
